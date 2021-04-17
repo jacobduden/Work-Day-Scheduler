@@ -21,6 +21,7 @@ $(document).ready(function () {
         //loops over each block and changes background color based on the currentTime
         $(".time-block").each(function () {
             var timeBlock = parseInt($(this).attr("id").split("hour")[1]);
+            
             if (timeBlock < currentTime) {
                 $(this).removeClass("future");
                 $(this).removeClass("present");
